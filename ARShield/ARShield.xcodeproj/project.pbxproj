@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FDC281062B8AC06B004B40B2 /* ClickjackingImageClassifier 2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FDC281052B8AC06B004B40B2 /* ClickjackingImageClassifier 2.mlmodel */; };
+		FDC281092B8C3AED004B40B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDC281072B8C3AED004B40B2 /* LaunchScreen.storyboard */; };
+		FDC2810B2B8C3B9B004B40B2 /* LoadingScreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDC2810A2B8C3B9B004B40B2 /* LoadingScreen.jpg */; };
 		FDCE14CB2B7B0D0B00B8C9CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCE14CA2B7B0D0B00B8C9CF /* AppDelegate.swift */; };
 		FDCE14CD2B7B0D0B00B8C9CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCE14CC2B7B0D0B00B8C9CF /* ContentView.swift */; };
 		FDCE14CF2B7B0D0C00B8C9CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDCE14CE2B7B0D0C00B8C9CF /* Assets.xcassets */; };
 		FDCE14D22B7B0D0C00B8C9CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDCE14D12B7B0D0C00B8C9CF /* Preview Assets.xcassets */; };
+		FDCE14E32B89A2D100B8C9CF /* ClickjackingDetection 2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FDCE14E22B89A2D100B8C9CF /* ClickjackingDetection 2.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FDC281052B8AC06B004B40B2 /* ClickjackingImageClassifier 2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "ClickjackingImageClassifier 2.mlmodel"; sourceTree = "<group>"; };
+		FDC281082B8C3AED004B40B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../ARShieldNew/ARShieldNew/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FDC2810A2B8C3B9B004B40B2 /* LoadingScreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = LoadingScreen.jpg; path = ../../ARShieldNew/ARShieldNew/LoadingScreen.jpg; sourceTree = "<group>"; };
 		FDCE14C72B7B0D0B00B8C9CF /* ARShield.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARShield.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDCE14CA2B7B0D0B00B8C9CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDCE14CC2B7B0D0B00B8C9CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FDCE14CE2B7B0D0C00B8C9CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDCE14D12B7B0D0C00B8C9CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FDCE14E22B89A2D100B8C9CF /* ClickjackingDetection 2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "ClickjackingDetection 2.mlmodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +59,13 @@
 		FDCE14C92B7B0D0B00B8C9CF /* ARShield */ = {
 			isa = PBXGroup;
 			children = (
+				FDC2810A2B8C3B9B004B40B2 /* LoadingScreen.jpg */,
+				FDCE14E22B89A2D100B8C9CF /* ClickjackingDetection 2.mlmodel */,
+				FDC281052B8AC06B004B40B2 /* ClickjackingImageClassifier 2.mlmodel */,
 				FDCE14CA2B7B0D0B00B8C9CF /* AppDelegate.swift */,
 				FDCE14CC2B7B0D0B00B8C9CF /* ContentView.swift */,
 				FDCE14CE2B7B0D0C00B8C9CF /* Assets.xcassets */,
+				FDC281072B8C3AED004B40B2 /* LaunchScreen.storyboard */,
 				FDCE14D02B7B0D0C00B8C9CF /* Preview Content */,
 			);
 			path = ARShield;
@@ -125,7 +137,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDC281092B8C3AED004B40B2 /* LaunchScreen.storyboard in Resources */,
 				FDCE14D22B7B0D0C00B8C9CF /* Preview Assets.xcassets in Resources */,
+				FDC2810B2B8C3B9B004B40B2 /* LoadingScreen.jpg in Resources */,
 				FDCE14CF2B7B0D0C00B8C9CF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,12 +151,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDC281062B8AC06B004B40B2 /* ClickjackingImageClassifier 2.mlmodel in Sources */,
 				FDCE14CD2B7B0D0B00B8C9CF /* ContentView.swift in Sources */,
 				FDCE14CB2B7B0D0B00B8C9CF /* AppDelegate.swift in Sources */,
+				FDCE14E32B89A2D100B8C9CF /* ClickjackingDetection 2.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FDC281072B8C3AED004B40B2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDC281082B8C3AED004B40B2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FDCE14D32B7B0D0C00B8C9CF /* Debug */ = {
@@ -278,6 +305,7 @@
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -309,6 +337,7 @@
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

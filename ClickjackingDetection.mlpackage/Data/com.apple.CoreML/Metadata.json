@@ -1,0 +1,13 @@
+{
+  "MLModelVersionStringKey" : "--",
+  "MLModelDescriptionKey" : "--",
+  "MLModelCreatorDefinedKey" : {
+    "com.apple.createml.app.tag" : "121.1",
+    "com.apple.createml.version" : "14.1.0",
+    "com.apple.createml.app.version" : "5.0",
+    "iterations" : "75",
+    "com.apple.coreml.model.preview.type" : "objectDetector"
+  },
+  "MLModelAuthorKey" : "Ani Avetian",
+  "MLModelLicenseKey" : "--"
+}

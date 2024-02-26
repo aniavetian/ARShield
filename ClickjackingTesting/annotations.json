@@ -1,0 +1,86 @@
+[
+  {
+    "annotation": [
+      {
+        "coordinates": {
+          "width": 851.3529773622048,
+          "height": 566.054749015748,
+          "y": 1303.1936515748032,
+          "x": 631.7712844488188
+        },
+        "label": "normal"
+      }
+    ],
+    "imagefilename": "NTest1.PNG"
+  },
+  {
+    "annotation": [
+      {
+        "label": "normal",
+        "coordinates": {
+          "y": 1469.8545767716535,
+          "width": 829.6317667322834,
+          "x": 543.128998523622,
+          "height": 584.1031003937007
+        }
+      }
+    ],
+    "imagefilename": "NTest2.PNG"
+  },
+  {
+    "annotation": [
+      {
+        "label": "clickjacking",
+        "coordinates": {
+          "height": 559.4988927165352,
+          "x": 801.8878567913385,
+          "width": 772.3272637795275,
+          "y": 1606.2045398622047
+        }
+      }
+    ],
+    "imagefilename": "CJTest1.PNG"
+  },
+  {
+    "imagefilename": "CJTest2.PNG",
+    "annotation": [
+      {
+        "coordinates": {
+          "y": 982.2923843503937,
+          "x": 539.5746186023622,
+          "width": 944.912155511811,
+          "height": 632.126722440945
+        },
+        "label": "clickjacking"
+      }
+    ]
+  },
+  {
+    "imagefilename": "CJTest3.PNG",
+    "annotation": [
+      {
+        "label": "clickjacking",
+        "coordinates": {
+          "x": 524.7647022637796,
+          "width": 914.3839812992126,
+          "y": 1400.0307578740158,
+          "height": 572.7685777559054
+        }
+      }
+    ]
+  },
+  {
+    "imagefilename": "CJTest4.PNG",
+    "annotation": [
+      {
+        "coordinates": {
+          "x": 513.390686515748,
+          "height": 853.5645915354332,
+          "width": 585.05093503937,
+          "y": 1314.468934547244
+        },
+        "label": "clickjacking"
+      }
+    ]
+  }
+]

@@ -1,0 +1,24 @@
+{
+    "fileFormatVersion": "1.0.0",
+    "itemInfoEntries": {
+        "20B67C48-103D-4742-8145-2E72D91490C6": {
+            "author": "com.apple.CoreML",
+            "description": "External Metadata Overlay",
+            "name": "Metadata.json",
+            "path": "com.apple.CoreML/Metadata.json"
+        },
+        "38D25BFD-5A72-49CA-9ACB-FE9D89CDDD58": {
+            "author": "com.apple.CoreML",
+            "description": "External FeatureDescription Overlay",
+            "name": "FeatureDescriptions.json",
+            "path": "com.apple.CoreML/FeatureDescriptions.json"
+        },
+        "E6233553-EC81-45B2-B0D6-C4C7DA85B958": {
+            "author": "com.apple.CoreML",
+            "description": "CoreML Model Specification",
+            "name": "ClickjackingDetection.mlmodel",
+            "path": "com.apple.CoreML/ClickjackingDetection.mlmodel"
+        }
+    },
+    "rootModelIdentifier": "E6233553-EC81-45B2-B0D6-C4C7DA85B958"
+}
