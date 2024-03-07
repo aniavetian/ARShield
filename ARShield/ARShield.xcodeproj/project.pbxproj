@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		FDC281062B8AC06B004B40B2 /* ClickjackingImageClassifier 2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FDC281052B8AC06B004B40B2 /* ClickjackingImageClassifier 2.mlmodel */; };
-		FDC281092B8C3AED004B40B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDC281072B8C3AED004B40B2 /* LaunchScreen.storyboard */; };
-		FDC2810B2B8C3B9B004B40B2 /* LoadingScreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDC2810A2B8C3B9B004B40B2 /* LoadingScreen.jpg */; };
+		FDC281472B919D82004B40B2 /* ClickjackingDetection_V4.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FDC281462B919D82004B40B2 /* ClickjackingDetection_V4.mlmodel */; };
+		FDC281492B919DA1004B40B2 /* ClickjackingImageClassifier_V4.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FDC281482B919DA0004B40B2 /* ClickjackingImageClassifier_V4.mlmodel */; };
+		FDC2814B2B996EEC004B40B2 /* ClickjackingImageClassifier_V5.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FDC2814A2B996EEC004B40B2 /* ClickjackingImageClassifier_V5.mlmodel */; };
+		FDC2814F2B9982B5004B40B2 /* LoadingScreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDC2814E2B9982B5004B40B2 /* LoadingScreen.jpg */; };
+		FDC281512B9982F1004B40B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDC281502B9982F1004B40B2 /* LaunchScreen.storyboard */; };
 		FDCE14CB2B7B0D0B00B8C9CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCE14CA2B7B0D0B00B8C9CF /* AppDelegate.swift */; };
 		FDCE14CD2B7B0D0B00B8C9CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCE14CC2B7B0D0B00B8C9CF /* ContentView.swift */; };
 		FDCE14CF2B7B0D0C00B8C9CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDCE14CE2B7B0D0C00B8C9CF /* Assets.xcassets */; };
@@ -19,8 +22,11 @@
 
 /* Begin PBXFileReference section */
 		FDC281052B8AC06B004B40B2 /* ClickjackingImageClassifier 2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "ClickjackingImageClassifier 2.mlmodel"; sourceTree = "<group>"; };
-		FDC281082B8C3AED004B40B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../ARShieldNew/ARShieldNew/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FDC2810A2B8C3B9B004B40B2 /* LoadingScreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = LoadingScreen.jpg; path = ../../ARShieldNew/ARShieldNew/LoadingScreen.jpg; sourceTree = "<group>"; };
+		FDC281462B919D82004B40B2 /* ClickjackingDetection_V4.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ClickjackingDetection_V4.mlmodel; sourceTree = "<group>"; };
+		FDC281482B919DA0004B40B2 /* ClickjackingImageClassifier_V4.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ClickjackingImageClassifier_V4.mlmodel; sourceTree = "<group>"; };
+		FDC2814A2B996EEC004B40B2 /* ClickjackingImageClassifier_V5.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ClickjackingImageClassifier_V5.mlmodel; sourceTree = "<group>"; };
+		FDC2814E2B9982B5004B40B2 /* LoadingScreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LoadingScreen.jpg; sourceTree = "<group>"; };
+		FDC281502B9982F1004B40B2 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDCE14C72B7B0D0B00B8C9CF /* ARShield.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARShield.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDCE14CA2B7B0D0B00B8C9CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDCE14CC2B7B0D0B00B8C9CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,13 +65,16 @@
 		FDCE14C92B7B0D0B00B8C9CF /* ARShield */ = {
 			isa = PBXGroup;
 			children = (
-				FDC2810A2B8C3B9B004B40B2 /* LoadingScreen.jpg */,
+				FDC2814E2B9982B5004B40B2 /* LoadingScreen.jpg */,
+				FDC281462B919D82004B40B2 /* ClickjackingDetection_V4.mlmodel */,
 				FDCE14E22B89A2D100B8C9CF /* ClickjackingDetection 2.mlmodel */,
+				FDC281482B919DA0004B40B2 /* ClickjackingImageClassifier_V4.mlmodel */,
 				FDC281052B8AC06B004B40B2 /* ClickjackingImageClassifier 2.mlmodel */,
+				FDC2814A2B996EEC004B40B2 /* ClickjackingImageClassifier_V5.mlmodel */,
 				FDCE14CA2B7B0D0B00B8C9CF /* AppDelegate.swift */,
 				FDCE14CC2B7B0D0B00B8C9CF /* ContentView.swift */,
 				FDCE14CE2B7B0D0C00B8C9CF /* Assets.xcassets */,
-				FDC281072B8C3AED004B40B2 /* LaunchScreen.storyboard */,
+				FDC281502B9982F1004B40B2 /* LaunchScreen.storyboard */,
 				FDCE14D02B7B0D0C00B8C9CF /* Preview Content */,
 			);
 			path = ARShield;
@@ -137,9 +146,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDC281092B8C3AED004B40B2 /* LaunchScreen.storyboard in Resources */,
 				FDCE14D22B7B0D0C00B8C9CF /* Preview Assets.xcassets in Resources */,
-				FDC2810B2B8C3B9B004B40B2 /* LoadingScreen.jpg in Resources */,
+				FDC281512B9982F1004B40B2 /* LaunchScreen.storyboard in Resources */,
+				FDC2814F2B9982B5004B40B2 /* LoadingScreen.jpg in Resources */,
 				FDCE14CF2B7B0D0C00B8C9CF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,25 +160,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDC281492B919DA1004B40B2 /* ClickjackingImageClassifier_V4.mlmodel in Sources */,
 				FDC281062B8AC06B004B40B2 /* ClickjackingImageClassifier 2.mlmodel in Sources */,
+				FDC281472B919D82004B40B2 /* ClickjackingDetection_V4.mlmodel in Sources */,
 				FDCE14CD2B7B0D0B00B8C9CF /* ContentView.swift in Sources */,
 				FDCE14CB2B7B0D0B00B8C9CF /* AppDelegate.swift in Sources */,
+				FDC2814B2B996EEC004B40B2 /* ClickjackingImageClassifier_V5.mlmodel in Sources */,
 				FDCE14E32B89A2D100B8C9CF /* ClickjackingDetection 2.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		FDC281072B8C3AED004B40B2 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FDC281082B8C3AED004B40B2 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FDCE14D32B7B0D0C00B8C9CF /* Debug */ = {

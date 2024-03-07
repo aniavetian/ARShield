@@ -459,5 +459,297 @@
           }
         }
       ]
-    }
+    },{
+       "annotation": [
+         {
+           "label": "normal",
+           "coordinates": {
+             "y": 1364.0130413385828,
+             "x": 256.66572342519686,
+             "height": 254.84904035433055,
+             "width": 385.136811023622
+           }
+         },
+         {
+           "label": "normal",
+           "coordinates": {
+             "x": 1018.3101008858267,
+             "width": 751.3959153543307,
+             "height": 470.04699803149606,
+             "y": 1901.5932578740158
+           }
+         }
+       ],
+       "imagefilename": "N15.PNG"
+     },
+     {
+       "imagefilename": "CJ21.PNG",
+       "annotation": [
+         {
+           "label": "clickjacking",
+           "coordinates": {
+             "x": 595.2204109251968,
+             "height": 994.7524606299214,
+             "y": 1685.5264517716535,
+             "width": 1130.2138287401574
+           }
+         }
+       ]
+     },
+     {
+       "annotation": [
+         {
+           "coordinates": {
+             "x": 672.9231053149606,
+             "y": 1136.8881643700788,
+             "width": 320.2101377952756,
+             "height": 177.91646161417316
+           },
+           "label": "normal"
+         },
+         {
+           "label": "normal",
+           "coordinates": {
+             "height": 553.0220226377953,
+             "y": 1884.591473917323,
+             "x": 554.6609867125984,
+             "width": 792.1528051181102
+           }
+         }
+       ],
+       "imagefilename": "N14.PNG"
+     },
+     {
+       "imagefilename": "CJ23.PNG",
+       "annotation": [
+         {
+           "label": "clickjacking",
+           "coordinates": {
+             "y": 1400.3269562007874,
+             "width": 1123.9344242125985,
+             "x": 538.2713459645669,
+             "height": 767.0351870078741
+           }
+         }
+       ]
+     },
+     {
+       "imagefilename": "CJ22.PNG",
+       "annotation": [
+         {
+           "coordinates": {
+             "y": 1331.470718503937,
+             "x": 693.5780019685039,
+             "height": 796.3785679133857,
+             "width": 1157.5825541338581
+           },
+           "label": "clickjacking"
+         }
+       ]
+     },
+     {
+       "imagefilename": "N13.PNG",
+       "annotation": [
+         {
+           "label": "normal",
+           "coordinates": {
+             "height": 816.2830954724411,
+             "width": 1060.7059547244094,
+             "y": 1412.2538754921259,
+             "x": 570.1027928149606
+           }
+         }
+       ]
+     },
+     {
+       "imagefilename": "CJ26.PNG",
+       "annotation": [
+         {
+           "coordinates": {
+             "width": 1149.4469734251968,
+             "x": 674.4633366141732,
+             "y": 1416.1044537401574,
+             "height": 670.9484498031495
+           },
+           "label": "clickjacking"
+         }
+       ]
+     },
+     {
+       "annotation": [
+         {
+           "label": "clickjacking",
+           "coordinates": {
+             "width": 1058.5733267716537,
+             "height": 760.2423720472441,
+             "y": 1529.6273991141732,
+             "x": 530.5504429133858
+           }
+         }
+       ],
+       "imagefilename": "CJ27.PNG"
+     },
+     {
+       "imagefilename": "N12.PNG",
+       "annotation": [
+         {
+           "label": "normal",
+           "coordinates": {
+             "x": 695.6118971456693,
+             "y": 1636.6339812992126,
+             "width": 990.5266978346457,
+             "height": 626.3212352362204
+           }
+         }
+       ]
+     },
+     {
+       "annotation": [
+         {
+           "coordinates": {
+             "height": 780.4233513779528,
+             "x": 646.1467765748031,
+             "width": 1223.9309793307089,
+             "y": 727.0286663385826
+           },
+           "label": "clickjacking"
+         }
+       ],
+       "imagefilename": "CJ25.PNG"
+     },
+     {
+       "imagefilename": "CJ24.PNG",
+       "annotation": [
+         {
+           "coordinates": {
+             "height": 982.4701033464567,
+             "width": 1313.540846456693,
+             "x": 583.4119709645669,
+             "y": 1567.4420521653542
+           },
+           "label": "clickjacking"
+         }
+       ]
+     },
+     {
+       "imagefilename": "CJ28.PNG",
+       "annotation": [
+         {
+           "coordinates": {
+             "height": 709.0323529411762,
+             "x": 654.3072478991596,
+             "y": 1492.7005777310924,
+             "width": 1114.0925420168066
+           },
+           "label": "clickjacking"
+         }
+       ]
+     },
+     {
+       "annotation": [
+         {
+           "coordinates": {
+             "y": 1463.338213582677,
+             "height": 430.27743602362216,
+             "width": 577.0733267716536,
+             "x": 867.1304749015748
+           },
+           "label": "normal"
+         }
+       ],
+       "imagefilename": "N16.PNG"
+     },
+     {
+       "annotation": [
+         {
+           "coordinates": {
+             "y": 1625.9116018700788,
+             "height": 661.5490895669291,
+             "x": 800.8215428149606,
+             "width": 913.4361466535433
+           },
+           "label": "normal"
+         }
+       ],
+       "imagefilename": "N17.PNG"
+     },
+     {
+       "imagefilename": "CJ32.PNG",
+       "annotation": [
+         {
+           "label": "clickjacking",
+           "coordinates": {
+             "width": 1164.8097933070867,
+             "y": 1675.751906988189,
+             "height": 834.4499261811022,
+             "x": 642.8096087598425
+           }
+         }
+       ]
+     },
+     {
+       "annotation": [
+         {
+           "coordinates": {
+             "width": 1309.8284940944882,
+             "x": 602.4871432086615,
+             "y": 1839.3718626968503,
+             "height": 1010.470718503937
+           },
+           "label": "clickjacking"
+         }
+       ],
+       "imagefilename": "CJ31.PNG"
+     },
+     {
+       "annotation": [
+         {
+           "label": "clickjacking",
+           "coordinates": {
+             "x": 548.0458907480315,
+             "width": 1419.7378198818897,
+             "y": 822.9771776574803,
+             "height": 1030.533218503937
+           }
+         }
+       ],
+       "imagefilename": "CJ30.PNG"
+     },
+     {
+       "annotation": [
+         {
+           "label": "clickjacking",
+           "coordinates": {
+             "y": 1197.8062869094488,
+             "x": 909.2893700787401,
+             "height": 815.9671505905512,
+             "width": 1181.6338582677165
+           }
+         }
+       ],
+       "imagefilename": "CJ29.PNG"
+     },
+     {
+       "imagefilename": "N18.PNG",
+       "annotation": [
+         {
+           "label": "normal",
+           "coordinates": {
+             "y": 1199.3465182086613,
+             "width": 401.40797244094483,
+             "height": 377.15920275590565,
+             "x": 323.0931348425197
+           }
+         },
+         {
+           "label": "normal",
+           "coordinates": {
+             "height": 657.5602854330709,
+             "x": 845.8634350393701,
+             "y": 1884.0188238188975,
+             "width": 911.6589566929134
+           }
+         }
+       ]
+     }
 ]

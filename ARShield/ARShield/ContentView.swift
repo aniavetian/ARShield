@@ -1,159 +1,10 @@
-////
-////  ContentView.swift
-////  ARShield
-////
-////  Created by Ani Avetian on 2/12/24.
-////  WORKING VERSION
-////  This version loads the objects needed in AR and Reality Kit
-//// This Version breaks my phone
-//
-//import SwiftUI
-//import RealityKit
-//import ARKit
-//import Vision
-//import CoreML
-//
-//
-//
-//
-//struct ContentView : View {
-//    var body: some View {
-//       VStack {
-//          ARViewContainer()
-//          DetectionResultView()
-//       }.edgesIgnoringSafeArea(.all)
-//    }
-//}
-//
-//
-//struct ARViewContainer: UIViewRepresentable {
-//   
-//   
-//   func makeUIView(context: Context) -> ARView {
-//      
-//      // Create AR View
-//      let arView = ARView(frame: .zero)
-//      
-//      // Create AR config
-//      let configuration = ARWorldTrackingConfiguration()
-//      arView.session.run(configuration)
-//      
-//      // Create bottom cube and add to AR env
-//      let bottomCube = createCube(color: UIColor.blue.withAlphaComponent(0.8))
-//      arView.installGestures([.translation, .rotation, .scale], for: bottomCube as! HasCollision)
-//      let bottomAnchor = AnchorEntity(world: [0.0, 0.0, 0])
-//      bottomAnchor.addChild(bottomCube)
-//      arView.scene.anchors.append(bottomAnchor)
-//      
-//      // Create top cube and add to AR env
-//      let topCube = createCube(color: UIColor.red.withAlphaComponent(1.0))
-//      arView.installGestures([.translation, .rotation, .scale], for: topCube as! HasCollision)
-//      let topAnchor = AnchorEntity(world: [0, 0.0, 0])
-//      topAnchor.addChild(topCube)
-//      arView.scene.anchors.append(topAnchor)
-//      
-//      print("INFO: RETURNED VIEW")
-//      
-//      // Load Model
-//      guard let model = try? VNCoreMLModel(for: ClickjackingImageClassifier_2().model) else {
-//          fatalError("Failed to load Core ML model.")
-//      }
-//      
-//      print("INFO: LOADED MODEL")
-//      
-//      // Perform object detection on every frame
-//      //.session.delegate = context.coordinator
-//      
-//      
-//      return arView
-//   }
-//   
-//   // Create a cube model
-//   func createCube(color: UIColor) -> Entity {
-//      let boxSize = SIMD3<Float>(0.1, 0.05, 0.05) // Width, Height, Depth
-//      let mesh = MeshResource.generateBox(size: boxSize, cornerRadius: 0.005)
-//      let material = SimpleMaterial(color: color, roughness: 0.15, isMetallic: true)
-//      let model = ModelEntity(mesh: mesh, materials: [material])
-//      model.generateCollisionShapes(recursive: true)
-//      return model
-//   }
-//   
-//   
-//   func updateUIView(_ uiView: ARView, context: Context) {}
-//   
-//   func makeCoordinator() -> Coordinator {
-//       return Coordinator()
-//   }
-//   
-//   class Coordinator: NSObject, ARSessionDelegate {
-//           func session(_ session: ARSession, didUpdate frame: ARFrame) {
-//               guard let model = try? VNCoreMLModel(for: ClickjackingImageClassifier_2().model) else {
-//                   fatalError("Failed to load Core ML model.")
-//               }
-//               
-//               let request = VNCoreMLRequest(model: model) { request, error in
-//                   guard let results = request.results as? [VNRecognizedObjectObservation] else {
-//                       return
-//                   }
-//                   
-//                   for result in results {
-//                       if result.labels.first?.identifier == "Clickjacking" {
-//                           DispatchQueue.main.async {
-//                               DetectedObjectState.shared.updateDetectedObject(true)
-//                           }
-//                           return
-//                       }
-//                   }
-//                   
-//                   DispatchQueue.main.async {
-//                       DetectedObjectState.shared.updateDetectedObject(false)
-//                   }
-//               }
-//               
-//               let handler = VNImageRequestHandler(cvPixelBuffer: frame.capturedImage, options: [:])
-//               try? handler.perform([request])
-//           }
-//      }
-//}
-//
-//struct DetectionResultView: View {
-//    var body: some View {
-//        Text("Detection: \(DetectedObjectState.shared.detected ? "Detected" : "Not Detected")")
-//            .foregroundColor(DetectedObjectState.shared.detected ? .green : .red)
-//            .padding()
-//            .background(Color.white.opacity(0.5))
-//            .cornerRadius(10)
-//            .padding()
-//    }
-//}
-//
-//class DetectedObjectState: ObservableObject {
-//    static let shared = DetectedObjectState()
-//    
-//    @Published var detected: Bool = false
-//    
-//    func updateDetectedObject(_ detected: Bool) {
-//        self.detected = detected
-//    }
-//}
-//
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ContentView()
-//    }
-//}
-
-
-
- // Image Detection Version
-
-
 //
 //  ContentView.swift
 //  ARShield
 //
 //  Created by Ani Avetian on 2/12/24.
-//  WORKING VERSION - Using Image Recon
+//  Using Image Recognition this application will allow a user to detect clickjacking
+//  attacks in ARKit and RealityKit
 //
 
 import SwiftUI
@@ -163,7 +14,7 @@ import Vision
 import CoreML
 
 
-
+// Main Rendered View for App
 struct ContentView : View {
     var body: some View {
        VStack {
@@ -179,7 +30,7 @@ struct ContentView : View {
 
 struct ARViewContainer: UIViewRepresentable {
    
-   
+   // Create UI View for AR objects
    func makeUIView(context: Context) -> ARView {
       
       // Create AR View
@@ -218,7 +69,7 @@ struct ARViewContainer: UIViewRepresentable {
       return model
    }
    
-   // Update AR view
+   // Update AR view - no functionality needed
    func updateUIView(_ uiView: ARView, context: Context) {}
 }
    
@@ -248,6 +99,7 @@ struct DetectionResultView: View {
 }
 
 struct CapturePhotoButton: View {
+   @State private var count = 0
    
    // Button to capture photo of AR objects loaded in
     var body: some View {
@@ -279,29 +131,38 @@ struct CapturePhotoButton: View {
         UIGraphicsEndImageContext()
         
         // Pass the captured image to your image recognition model for detection
-        let imageRecognitionModel = ClickjackingImageClassifier_2()
-       if let pixelBuffer = pixelBuffer(from: image) {
-          do {
-             // Detect object
-             let recognitionResult = try imageRecognitionModel.prediction(image: pixelBuffer)
-             print(recognitionResult.target)
-             
-             // Update detected status based on image recon result
-             if recognitionResult.target == "Clickjacking" {
-                viewModel.updateDetectionStatus(newStatus: "Detected")
-                print("here")
-             } else {
-                viewModel.updateDetectionStatus(newStatus: "Not Detected")
-                print("here2")
+       do {
+          let imageRecognitionModel = try ClickjackingImageClassifier_V5()
+          if let pixelBuffer = pixelBuffer(from: image) {
+             do {
+                // Detect object
+                let recognitionResult = try imageRecognitionModel.prediction(image: pixelBuffer)
+                
+                // DEBUGGING PRINT STATEMENTS - Accuracy
+                print(String(count) + " " + recognitionResult.target)
+                print(recognitionResult.targetProbability)
+                print("---------------------------------------------------------")
+                count += 1
+                
+                // Update detected status based on image recon result
+                if recognitionResult.target == "Clickjacking" {
+                   viewModel.updateDetectionStatus(newStatus: "Detected")
+                } else {
+                   viewModel.updateDetectionStatus(newStatus: "Not Detected")
+                }
+             } catch {
+                print("ERROR: NOT ABLE TO DETECT")
              }
-          } catch {
-             print("ERROR: NOT ABLE TO DETECT")
-          }
-         }
+            }
+       } catch {
+          print("ERROR: DID NOT LOAD MODEL")
+       }
+        
        
     }
    
    // Adapted from https://stackoverflow.com/questions/44462087/how-to-convert-a-uiimage-to-a-cvpixelbuffer
+   // Converts UIImage to CVPixelBuffer needed for ML model
    func pixelBuffer(from image: UIImage) -> CVPixelBuffer? {
        let attrs = [kCVPixelBufferCGImageCompatibilityKey: kCFBooleanTrue,
                     kCVPixelBufferCGBitmapContextCompatibilityKey: kCFBooleanTrue]
@@ -326,6 +187,7 @@ struct CapturePhotoButton: View {
    }
 }
 
+// Present View to User
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
