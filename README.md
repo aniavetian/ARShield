@@ -15,6 +15,8 @@ This application uses computer vision techniques to detect clickjacking attacks 
    - Photos and annotations used to train the clickjacking image detection model
 5. `ClickjackingDetection.mlproj` (Object Detection) + `ClickjackingImageClassifier.mlproj` (Image Detection)
    - CreateML models that were used in the training of their the object detection model and the image detection model
+5. Research Paper
+   - Contains the Latex files for the final research paper. Also contains the paper in PDF format.
 
 ## Architecture
 
